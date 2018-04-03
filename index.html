@@ -6,8 +6,21 @@
 </head>
 <body>
 
-<script type="text/javascript" src="src/main/resources/lib/kotlin.js"></script>
-<script type="text/javascript" src="build/classes/kotlin/main/kotlin-js-hello-world-demo.js"></script>
+<script type="text/javascript" src="node_modules/requirejs/require.js"></script>
+<script>
+    require.config({
+      paths: {
+        "kotlin": "src/main/resources/lib/kotlin",
+        "hello": "src/main/resources/hello",
+        "main": "build/classes/kotlin/main/kotlin-invoke-js-module-demo"
+      }
+　　 });
+    require(["main"]);
+
+</script>
+<script type="text/javascript" src=""></script>
+<script type="text/javascript" src=""></script>
+<script type="text/javascript" src=""></script>
 
 </body>
 </html>

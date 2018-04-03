@@ -1,12 +1,12 @@
-Kotlin JS Hello World Demo
+Kotlin Invoke Js Module Demo
 =======================
 
-Hello world from kotlin-js.
-
+Wrap a js module and use it in kotlin.
 
 Run:
 
 ```
+npm install
 ./gradlew clean compileKotlin2Js
 npm install -g http-server
 http-server .
