@@ -1,10 +1,10 @@
 package example
 
+import kotlin.browser.document
+
 @JsModule("hello")
-external val hello: (String) -> Unit = definedExternally
+external fun helloAnotherName(name: String): String = definedExternally
 
 fun main(args: Array<String>) {
-    hello("KotlinJS")
+    document.getElementById("main")!!.innerHTML = helloAnotherName("KotlinJS")
 }
-
-
